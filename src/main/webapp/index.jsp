@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Roshan</title>
+    <title>Roja</title>
 
 
     <!-- Custom styles for this template -->
