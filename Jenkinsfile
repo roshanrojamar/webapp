@@ -12,13 +12,7 @@ pipeline {
             ''' 
       }
     }
-    stage ('git-secrets') {
-      steps {
-        sh 'sudo rm trufflehog || true'
-        sh 'sudo docker run gesellix/trufflehog --json https://github.com/roshanrojamar/webapp.git > trufflehog'  
-        sh 'sudo cat trufflehog'
-    }
-    }
+    
     stage ('Build') {
       steps {
         sh 'mvn clean package'
